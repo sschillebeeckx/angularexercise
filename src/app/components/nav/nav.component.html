@@ -1,0 +1,20 @@
+<!--<ul>
+  <li>
+    <a routerLink="/demo">Demo</a>
+  </li>
+  <li>
+    <a routerLink="/exercise">Exercise</a>
+  </li>
+  <li>
+    <a routerLink="/stopwatch">Stopwatch</a>
+  </li>
+</ul>-->
+
+<ul>
+  <li *ngFor="let val of links">
+    <a routerLink="{{ val.url }}">{{ val.title }}</a>
+  </li>
+</ul>
+
+
+

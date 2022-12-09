@@ -1,0 +1,5 @@
+
+<p>{{ time | timeToMinSec}} </p>
+<button value="start" (click)="startTimer()" [disabled]="!startEnabled">START</button>
+<button value="reset" (click)="resetTimer()" [disabled]="!resetEnabled">RESET</button>
+<button value="pause" (click)="pauseTimer()" [disabled]="!pauseEnabled">PAUSE</button>
